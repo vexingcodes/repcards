@@ -1,3 +1,5 @@
 **
+!card.css
+!card.html.jinja2
 !gen_cards.py
 !Pipfile*

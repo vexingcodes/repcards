@@ -14,6 +14,6 @@ RUN apt-get update \
       shared-mime-info \
  && pip3 install pipenv
 ADD https://theunitedstates.io/congress-legislators/legislators-current.json ./
-COPY Pipfile Pipfile.lock gen_cards.py ./
+COPY Pipfile Pipfile.lock gen_cards.py card.html.jinja2 card.css ./
 RUN pipenv install
 CMD ["/usr/local/bin/pipenv", "run", "python", "gen_cards.py"]
